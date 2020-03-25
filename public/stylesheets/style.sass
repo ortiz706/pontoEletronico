@@ -3,8 +3,7 @@
 @import ../bootstrap/scss/social-media.scss
 @import ../fontawesome/css/all.css
 
-$CPE-yellow: #EFDB30
-$CPE-black: #000000
+$CPE-white: #FFFF
 $CPE-gray: #020202
 $light-gray: #E5E7E9
 $light-gray-2: #CACCD1
@@ -12,8 +11,8 @@ $light-green: #A9F183
 $light-green-2: #D0FDD1
 $light-red: #FF7D60
 $light-red-2: #FFAB98
-$light-yellow: #FEF24E
-$light-yellow-2: #FDFD96
+$light-white: #FEF24E
+$light-white-2: #FDFD96
 
 @font-face
   font-family: 'open-sans-bold'
@@ -33,14 +32,14 @@ body
 .text-light-gray-2
   color: $light-gray-2
 
-.text-CPE-black
-  color: $CPE-black
+.text-CPE-blue
+  color: #3f51b5
 
-.text-CPE-yellow
-  color: $CPE-yellow
+.text-CPE-white
+  color: $CPE-white
 
-.bg-CPE-black
-  background-color: $CPE-black
+.bg-CPE-blue
+  background-color: #3f51b5
   padding-bottom: 0.04em
 
 .bg-light-green
@@ -55,14 +54,14 @@ body
 .bg-light-red-2
   background-color: $light-red-2
 
-.bg-light-yellow
-  background-color: $light-yellow
+.bg-light-white
+  background-color: $light-white
 
-.bg-light-yellow-2
-  background-color: $light-yellow-2
+.bg-light-white-2
+  background-color: $light-white-2
 
-.thead-CPE-black th
-  background-color: $CPE-black
+.thead-CPE-blue th
+  background-color: #3f51b5
   color: #fff
   border-color: #32383e
 
@@ -92,7 +91,7 @@ body
   vertical-align: middle
 
 .vl
-  border-left: 0.1em solid $CPE-black
+  border-left: 0.1em solid #3f51b5
 
 .menu-logo
   width: 10.59em
@@ -103,16 +102,16 @@ body
   padding: 1em
   margin: 0 auto
 
-.black-button
+.blue-button
   color: #FFF
-  background-color: $CPE-black
+  background-color: #3f51b5
   border-color: $CPE-gray
   transition: ease all 0.6s
 
-.black-button:hover
-  color: $CPE-black
-  background-color: $CPE-yellow
-  border-color: $CPE-yellow
+.blue-button:hover
+  color: #3f51b5
+  background-color: $CPE-white
+  border-color: $CPE-white
 
 .login-button-position
   position: relative
@@ -126,7 +125,7 @@ body
 	box-shadow: none !important
 
 .user-input .input-text:focus
-	border-color: black
+	border-color: blue
 	border-width: 1px
 
 .user-input .floating-label
@@ -147,8 +146,8 @@ body
 	box-shadow: none !important
 
 .new-shadow:focus
-  border-color: black
-  border-width: medium medium 2px
+  border-color: blue
+  border-width: medium medium 2px$CPE-white
 
 .user-input textarea:focus ~ .floating-label,
 .user-input textarea:not(:focus):valid ~ .floating-label
@@ -166,8 +165,8 @@ body
   min-width: 250px
   max-width: 250px
   min-height: 100vh
-  background: $CPE-black
-  color: $CPE-yellow
+  background: #3f51b5
+  color: $CPE-white
   transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665)
   transform-origin: center left
   z-index: 15
@@ -228,13 +227,13 @@ a, a:hover, a:focus
 
 #sidebar .sidebar-header
   padding: 20px
-  background: $CPE-black
+  background: #3f51b5
 
 #sidebar ul.components
   padding: 20px 0
 
 #sidebar ul li
-  border-bottom: 1px solid $CPE-yellow
+  border-bottom: 1px solid $CPE-white
 
 #sidebar ul p
   color: #fff
@@ -246,12 +245,12 @@ a, a:hover, a:focus
   display: block
 
 #sidebar ul li a:hover
-  color: $CPE-black
-  background: $CPE-yellow
+  color: #3f51b5
+  background: $CPE-white
 
 #sidebar ul li.active > a, a[aria-expanded="true"]
-  color: $CPE-black
-  background: $CPE-yellow
+  color: #3f51b5
+  background: $CPE-white
 
 #sidebarCollapse
   width: 40px
@@ -263,7 +262,7 @@ a, a:hover, a:focus
   height: 2px
   margin: 0 auto
   display: block
-  background: $CPE-yellow
+  background: $CPE-white
   transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375)
 
 @media (min-width: 769px)
@@ -284,16 +283,20 @@ a, a:hover, a:focus
 ul ul a
   font-size: 0.9em !important
   padding-left: 30px !important
-  background: $CPE-yellow
-  color: $CPE-black
+  background: $CPE-white
+  color: #3f51b5
 
 #content
   width: 100vw
 
 .navbar-btn
-  background: $CPE-black
-  border-color: $CPE-yellow
+  background: #3f51b5
+  border-color: $CPE-white
   box-shadow: none !important
 
 .p-alert
   margin-bottom: 0 !important
+
+.black-button
+  background-color: #3f51b5
+  color: #FFFF 
