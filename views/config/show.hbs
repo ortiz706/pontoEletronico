@@ -1,0 +1,23 @@
+<main class="full-screen pt-2 mb-4" style="overflow-x: auto">
+  <article class="col-12 mt-3 mr-2 pl-5 row">
+    <section class="col-12 col-sm-6">
+      <h3>Configuração</h3>
+      <p><strong>Nome:</strong> {{_doc.config_id}}</p>
+      <h3 class="mt-4 mb-3">Google Sheets</h3>
+      <h5>Planilha de horários:</h5>
+      <p><strong>ID da planilha:</strong> {{_doc.sheets.read.id}}</p>
+      <p><strong>Range para leitura:</strong> {{_doc.sheets.read.range}}</p>
+    </section>
+    <section class="col-12 col-sm-6">
+      <h5 class="mt-3">Planilha com compilado:</h5>
+      <p><strong>ID da planilha:</strong> {{_doc.sheets.write.id}}</p>
+      <p><strong>Range para leitura:</strong> {{_doc.sheets.write.range}}</p>
+      <p><strong>Include Values In Response:</strong> {{_doc.sheets.write.includeValuesInResponse}}</p>
+      <p><strong>Insert Data Option:</strong> {{_doc.sheets.write.insertDataOption}}</p>
+      <p><strong>Response Date Time Render Option:</strong> {{_doc.sheets.write.responseDateTimeRenderOption}}</p>
+      <p><strong>Response Value Render Option:</strong> {{_doc.sheets.write.responseValueRenderOption}}</p>
+      <p><strong>Value Input Option:</strong> {{_doc.sheets.write.valueInputOption}}</p>
+    </section>
+  </article>
+  <a href="/config/{{_doc._id}}/edit" class="btn black-button ml-5">Editar</a>
+</main>

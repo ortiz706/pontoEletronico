@@ -1,0 +1,21 @@
+<main class="full-screen vertical-center">
+  <article class="text-center col-12 col-sm-6">
+    <form class="form-login" action="/users/{{_doc._id}}?_method=PUT" method="post">
+      <h1 class="h3 mb-3 font-weight-normal">Editar membro</h1>
+      <div class="user-input mt-4">
+        <input type="text" class="form-control input-text" name="user[name]" value="{{_doc.name}}" required >
+        <label class="floating-label text-light-gray-2">Nome</label>
+      </div>
+      <div class="mt-4">
+        <label for="inputRole" class="sr-only">Cargo</label>
+        <select id="inputRole" class="form-control new-shadow mb-2" name="user[role]" required>
+          <option disabled selected value>-- Cargo --</option>
+          {{#each roles}}
+          <option value="{{_id}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <button class="btn black-button mt-4" type="submit">Salvar</button>
+    </form>
+  </article>
+</main>

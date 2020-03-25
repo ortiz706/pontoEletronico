@@ -1,0 +1,18 @@
+{
+  "config_id": "production",
+  "sheets": {
+    "read": {
+      "id": "1XzSUQ0XWNFhKYPp1DvUVp49WS5aPGRzf93enfVKW5W8",
+      "range": "B2:G33"
+    },
+    "write": {
+      "id": "1RjqIYO51xOw-BIxn5iwkuMvVdQwVxzNN94TRfeWxju8",
+      "range": "Ponto!C3",
+      "includeValuesInResponse": "true",
+      "insertDataOption": "OVERWRITE",
+      "responseDateTimeRenderOption": "SERIAL_NUMBER",
+      "responseValueRenderOption": "FORMATTED_VALUE",
+      "valueInputOption": "USER_ENTERED"
+    }
+  }
+}

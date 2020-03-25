@@ -1,0 +1,43 @@
+<main class="full-screen pt-2 vertical-center">
+  <article class="col-11 col-sm-8 mt-5 ml-3">
+    <div class="text-center mb-3">
+      <h3>Membros</h3>
+    </div>
+    <section class="row col-12 mb-3 mx-auto justify-content-between">
+      <div class="col-sm-8">
+        <p>Filtre por um campo da tabela:</p>
+        <input type="text" id="search" class="form-control" placeholder="Ex.: Felipe ou Consultor">
+      </div>
+    </section>
+    <table class="table table-responsive-sm">
+      <caption>Lista de membros</caption>
+      <thead class="thead-CPE-black">
+        <tr>
+          <th class="text-center">Nome</th>
+          <th class="text-center">Cargo</th>
+          <th colspan="2" class="text-center">Opções</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+        {{#each users}}
+        <tr>
+          <td scope="row" class="text-center cursor-pointer align-middle font-weight-bold" onclick="location.href = '/users/{{id}}'">{{name}}</td>
+          <td scope="row" class="text-center cursor-pointer align-middle font-weight-bold" onclick="location.href = '/roles/{{role.id}}'">{{role.name}}</td>
+          <td scope="row" class="text-center">
+            <a class="btn black-button" href="/users/{{id}}/edit">Editar</a>
+          </td>
+          <td scope="row" class="text-center">
+            <form action="/users/{{id}}?_method=DELETE" method="POST">
+              <button type="submit" class="btn black-button">Excluir</button>
+            </form>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </article>
+</main>
+
+{{#section 'scripts'}}
+<script src="/javascripts/search-table.js"></script>
+{{/section}}

@@ -1,0 +1,51 @@
+<!-- <div class="container">
+  <table class="table">
+    <caption>Lista de entradas</caption>
+    <thead class="thead-CPE-black">
+      <tr>
+        <th class="text-center">Data</th>
+        <th class="text-center">Hora</th>
+      </tr>
+    </thead>
+    <tbody id="table">
+      {{#each entries}}
+      <tr>
+        <th scope="row" class="text-center">{{this}}</th>
+        <th scope="row" class="text-center"></th>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div> -->
+
+<!-- <h2></h2> -->
+<main class="full-screen">  
+  <div class="row justify-content-between text-center">
+    <div class="col-4">
+      <h5>Atrasos</h5>
+    </div>
+    <div class="col-4 vl">
+      <h5>HO's presentes</h5>
+    </div>
+    <div class="col-4 vl">
+      <h5>Faltas</h5>
+    </div>
+  </div>
+
+  <form action="/config" method="post">
+    <button type="submit" name="button">enviar</button>
+  </form>
+
+  <form id="loginForm" class="form-control" action="/login" method="post">
+    <input type="text" name="user[name]" value="Felipe Souza">
+    <button type="button" id="loginButton">Enviar</button>
+  </form>
+
+  {{#section 'scripts'}}
+  <script src="/javascripts/location.js"></script>
+  {{/section}}
+
+  <span class="ml-5 mt-5 badge badge-CPE text-white p-2" style="font-size: 1rem">
+    52 min.
+  </span>
+</main>

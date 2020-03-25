@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    {{{_sections.stylesheets}}}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="sidebar-header text-center">
+          <a class="navbar-brand" href="/">
+            <img src="/images/full-yellow-logo.png" class="menu-logo" alt="Menu principal">
+          </a>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="/schedules">Horários</a>
+          </li>
+          <li>
+            <a href="/hours">Horas</a>
+          </li>
+          <li>
+            <a href="/notes">Recado</a>
+          </li>
+          <li>
+            <a href="/restrict">Restrito</a>
+          </li>
+        </ul>
+        <div class="mr-2 ml-2">
+          <textarea rows="10" name="note" class="form-control" readonly>{{note}}</textarea>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg bg-CPE-black static-top pb-2">
+          <button type="button" id="sidebarCollapse" class="btn navbar-btn text-CPE-black">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+
+        {{{body}}}
+      </div>
+    </div>
+    <div class="CPE-alert col-12 col-lg-6 col-md-6">
+      {{> messages}}
+    </div>
+    <script src="/javascripts/jquery.js" charset="utf-8"></script>
+    <script src="/typeahead/typeahead.bundle.min.js" charset="utf-8"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="/javascripts/sidebar.js" charset="utf-8"></script>
+    {{{_sections.scripts}}}
+  </body>
+</html>

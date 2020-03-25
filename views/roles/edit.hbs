@@ -1,0 +1,12 @@
+<main class="full-screen vertical-center">
+  <article class="text-center col-12 col-sm-6">
+    <form class="form-login" action="/roles/{{_doc._id}}?_method=PUT" method="post">
+      <h1 class="h3 mb-3 font-weight-normal">Editar cargo</h1>
+      <div class="user-input mt-4">
+        <input type="text" class="form-control input-text" name="role[name]" value="{{_doc.name}}" required>
+        <label class="floating-label text-light-gray-2">Cargo</label>
+      </div>
+      <button class="btn black-button mt-4" type="submit">Salvar</button>
+    </form>
+  </article>
+</main>

@@ -1,0 +1,28 @@
+<main class="full-screen">
+  <article class="row pt-4 ml-2 mr-2 d-block d-sm-flex">
+    <section class="col-12 text-center text-sm-left col-sm-3">
+      <label for="inputUser">Selecione o membro:</label>
+      <select id="inputUser" class="form-control new-shadow mb-2" required autofocus>
+        <option disabled selected>-- Membro --</option>
+        {{#each users}}
+        <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <div id="hours" class="m-2 my-4 m-sm-3"></div>
+    </section>
+    <section class="col-12 col-sm-9">
+      <div class="my-auto d-sm-none text-center date mt-5"></div>
+      <div class="row justify-content-between">
+        <button type="button" id="previousButton" class="btn black-button">Anterior</button>
+        <div class="my-auto d-none d-sm-flex date"></div>
+        <button type="button" id="nextButton" class="btn black-button">Próximo</button>
+      </div>
+      <div id="report"></div>
+    </section>
+  </article>
+</main>
+
+{{#section 'scripts'}}
+<script src="/javascripts/moment-with-locales.min.js"></script>
+<script src="/javascripts/hours.js"></script>
+{{/section}}

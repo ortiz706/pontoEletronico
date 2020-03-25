@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    {{{_sections.stylesheets}}}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="sidebar-header text-center">
+          <a class="navbar-brand" href="/admin">
+            <img src="/images/full-yellow-logo.png" class="menu-logo" alt="Menu principal">
+          </a>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#reportsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios</a>
+            <ul class="collapse list-unstyled" id="reportsSubmenu">
+              <li>
+                <a href="/admin/reports">Completo</a>
+              </li>
+              <li>
+                <a href="/admin/entries">Entradas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#usersSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Membros</a>
+            <ul class="collapse list-unstyled" id="usersSubmenu">
+              <li>
+                <a href="/users">Ver todos</a>
+              </li>
+              <li>
+                <a href="/users/new">Novo</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#rolesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cargos</a>
+            <ul class="collapse list-unstyled" id="rolesSubmenu">
+              <li>
+                <a href="/roles">Ver todos</a>
+              </li>
+              <li>
+                <a href="/roles/new">Novo</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/admin/schedules">Horários</a>
+          </li>
+          <li>
+            <a href="/config">Configuração</a>
+          </li>
+          <li>
+            <a href="/admin/change-password">Alterar senha</a>
+          </li>
+          <li>
+            <a href="/logout">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg bg-CPE-black static-top pb-2">
+          <button type="button" id="sidebarCollapse" class="btn navbar-btn text-CPE-black">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+        {{{body}}}
+      </div>
+    </div>
+    <div class="CPE-alert col-12 col-lg-6 col-md-6">
+      {{> messages}}
+    </div>
+    <script src="/javascripts/jquery.js" charset="utf-8"></script>
+    <script src="/typeahead/typeahead.bundle.min.js" charset="utf-8"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="/javascripts/sidebar.js" charset="utf-8"></script>
+    {{{_sections.scripts}}}
+  </body>
+</html>

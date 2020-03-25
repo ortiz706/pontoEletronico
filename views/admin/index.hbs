@@ -1,0 +1,35 @@
+<main class="full-screen vertical-center">
+  <article class="col-12 col-sm-8 mt-4 m-sm-0">
+    <h5>Bem-vindo ao painel do usuário administrador!</h5>
+    <p>Aqui você tem acesso à todas as funcionalidades avançadas como:</p>
+    <ul>
+      <li>Criar, editar e deletar membros;</li>
+      <li>Criar, editar e deletar cargos;</li>
+      <li>Gerar relatórios completos com faltas e atrasos;</li>
+      <li>Gerar relatórios parciais com entradas;</li>
+      <li>Checar horários obrigatórios de cada usuário;</li>
+      <li>Editar as variáveis de configuração da plataforma.</li>
+    </ul>
+    <br>
+    <p>Qualquer problema, peça ajuda ao seu diretor ou ao responsável pela plataforma.</p>
+  </article>
+  <article class="col-12 col-sm-8">
+    <h5>Atualizar horários obrigatórios:</h5>
+
+    <br>
+    <form class="col-sm-6 mb-4 m-sm-0" action="/admin/google" method="post" id="mandatory-form">
+      <button type="button" id="mandatory-btn" class="btn black-button">Google sheets</button>
+      <div class="col-3 float-right">
+        <button type="button" class="btn black-button input-group-text"
+        data-toggle="tooltip" data-placement="top" title="Atualiza os horários obrigatórios de todos os membros a partir da planilha do google. É recomendado realizar a ação duas vezes.">
+        ?
+        </button>
+      </div>
+    </form>
+  </article>
+</main>
+
+{{#section 'scripts'}}
+  <script src="/javascripts/tooltip.js"></script>
+  <script src="/javascripts/admin-index.js"></script>
+{{/section}}

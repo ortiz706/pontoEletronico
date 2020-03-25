@@ -1,0 +1,21 @@
+<main class="full-screen">
+  <article class="row pt-4 ml-2 mr-2 d-block d-sm-flex">
+    <section class="col-12 text-center text-sm-left col-sm-3">
+      <label for="inputUser">Selecione o membro:</label>
+      <select id="inputUser" class="form-control new-shadow mb-2" name="" required autofocus>
+        <option disabled selected>-- Membro --</option>
+        {{#each users}}
+        <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+      </select>
+    </section>
+    <section class="col-12 col-sm-9">
+      <div id="schedules"></div>
+    </section>
+  </article>
+</main>
+
+{{#section 'scripts'}}
+<script src="/javascripts/moment-with-locales.min.js"></script>
+<script src="/javascripts/schedules.js"></script>
+{{/section}}
