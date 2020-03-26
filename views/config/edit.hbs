@@ -5,7 +5,7 @@
         <input type="text" class="form-control input-text" name="config[config_id]" value="{{_doc.config_id}}" required>
         <label class="floating-label text-light-gray-2">ID da configuração</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Nome para identificar o arquivo de configuração.">
             ?
           </button>
@@ -17,7 +17,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][read][id]" value="{{_doc.sheets.read.id}}" required>
         <label class="floating-label text-light-gray-2">ID da planilha</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Parte do link que identifica a planilha que contém os horários obrigatórios.">
             ?
           </button>
@@ -27,7 +27,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][read][range]" value="{{_doc.sheets.read.range}}" required>
         <label class="floating-label text-light-gray-2">Range para leitura</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Área da planilha que compreende os horários obrigatórios, incluindo o dia da semana e o horário.">
             ?
           </button>
@@ -38,7 +38,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][id]" value="{{_doc.sheets.write.id}}" required>
         <label class="floating-label text-light-gray-2">ID da planilha</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Parte do link que identifica a planilha em que serão escritos os resultados do compilado semanal.">
             ?
           </button>
@@ -48,7 +48,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][range]" value="{{_doc.sheets.write.range}}" required>
         <label class="floating-label text-light-gray-2">Range para escrita</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Célula que determina o início da pŕoxima escrita.">
             ?
           </button>
@@ -58,7 +58,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][includeValuesInResponse]" value="{{_doc.sheets.write.includeValuesInResponse}}" required>
         <label class="floating-label text-light-gray-2">Include Values In Response</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Variável booleana que determina se o objeto de resposta da operação deve incluir o valor das células que foram adicionadas.">
             ?
           </button>
@@ -68,7 +68,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][insertDataOption]" value="{{_doc.sheets.write.insertDataOption}}" required>
         <label class="floating-label text-light-gray-2">Insert Data Option</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Determina como os dados de entrada devem ser inseridos. Pode assumir os valores OVERWRITE ou INSERT_ROWS">
             ?
           </button>
@@ -78,7 +78,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][responseDateTimeRenderOption]" value="{{_doc.sheets.write.responseDateTimeRenderOption}}" required>
         <label class="floating-label text-light-gray-2">Response Date Time Render Option</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Determina como datas, hora e duração contidos no objeto de resposta devem ser renderizados. É ignorado se responseValueRenderOption for FORMATTED_VALUE. Pode assumir os valores SERIAL_NUMBER ou FORMATTED_STRING.">
             ?
           </button>
@@ -88,7 +88,7 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][responseValueRenderOption]" value="{{_doc.sheets.write.responseValueRenderOption}}" required>
         <label class="floating-label text-light-gray-2">Response Value Render Option</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Determina como os valores no objeto de resposta devem ser renderizados. Pode assumir os valores FORMATTED_VALUE, UNFORMATTED_VALUE ou FORMULA.">
             ?
           </button>
@@ -98,13 +98,13 @@
         <input type="text" class="form-control input-text" name="config[sheets][write][valueInputOption]" value="{{_doc.sheets.write.valueInputOption}}" required>
         <label class="floating-label text-light-gray-2">Value Input Option</label>
         <div class="input-group-append">
-          <button type="button" class="btn black-button input-group-text"
+          <button type="button" class="btn color-button input-group-text"
             data-toggle="tooltip" data-placement="top" title="Determina como os dados de entrada devem ser interpretados. Pode assumir os valores INPUT_VALUE_OPTION_UNSPECIFIED, RAW  ou USER_ENTERED.">
             ?
           </button>
         </div>
       </div>
-      <button type="submit" class="btn black-button float-right">Salvar</button>
+      <button type="submit" class="btn color-button float-right">Salvar</button>
     </form>
   </section>
 </main>

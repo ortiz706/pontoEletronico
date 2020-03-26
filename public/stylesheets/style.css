@@ -7396,13 +7396,13 @@ body {
   color: #CACCD1; }
 
 .text-CPE-blue {
-  color: #3f51b5; }
+  color: black; }
 
 .text-CPE-white {
   color: #FFFF; }
 
-.bg-CPE-blue {
-  background-color: #3f51b5;
+.bg-CPE-color {
+  background-color: black;
   padding-bottom: 0.04em; }
 
 .bg-light-green {
@@ -7424,7 +7424,7 @@ body {
   background-color: #FDFD96; }
 
 .thead-CPE-blue th {
-  background-color: #3f51b5;
+  background-color: black;
   color: #fff;
   border-color: #32383e; }
 
@@ -7454,7 +7454,7 @@ body {
   vertical-align: middle; }
 
 .vl {
-  border-left: 0.1em solid #3f51b5; }
+  border-left: 0.1em solid black; }
 
 .menu-logo {
   width: 10.59em;
@@ -7465,16 +7465,16 @@ body {
   padding: 1em;
   margin: 0 auto; }
 
-.blue-button {
+.color-button {
   color: #FFF;
-  background-color: #3f51b5;
+  background-color: black;
   border-color: #020202;
   transition: ease all 0.6s; }
 
-.blue-button:hover {
-  color: #3f51b5;
+.color-button:hover {
+  color: black;
   background-color: #FFFF;
-  border-color: #FFFF; }
+  border-color: #020202; }
 
 .login-button-position {
   position: relative;
@@ -7528,7 +7528,7 @@ body {
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
-  background: #3f51b5;
+  background: black;
   color: #FFFF;
   transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
   transform-origin: center left;
@@ -7583,7 +7583,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #3f51b5; }
+  background: black; }
 
 #sidebar ul.components {
   padding: 20px 0; }
@@ -7601,11 +7601,11 @@ a, a:hover, a:focus {
   display: block; }
 
 #sidebar ul li a:hover {
-  color: #3f51b5;
+  color: black;
   background: #FFFF; }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-  color: #3f51b5;
+  color: black;
   background: #FFFF; }
 
 #sidebarCollapse {
@@ -7637,25 +7637,21 @@ ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
   background: #FFFF;
-  color: #3f51b5; }
+  color: black; }
 
 #content {
   width: 100vw; }
 
 .navbar-btn {
-  background: #3f51b5;
+  background: black;
   border-color: #FFFF;
   box-shadow: none !important; }
 
 .p-alert {
   margin-bottom: 0 !important; }
 
-.black-button {
-  background-color: #3f51b5;
-  color: #FFFF; }
-
-.blue-background {
-  background-color: blue;
+.color-background {
+  background-color: black;
   color: #FFFF; }
 
 /*# sourceMappingURL=style.css.map */
