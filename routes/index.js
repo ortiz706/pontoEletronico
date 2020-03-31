@@ -188,7 +188,7 @@ router.post('/restrict', (req, res) => {
             role: result.role.name,
             name: result.name,
             id: result._id
-          };
+          };      
           res.redirect('/admin');
         }
         else {
