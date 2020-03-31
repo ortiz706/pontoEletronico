@@ -123,7 +123,7 @@ function writeReport(auth) {
   const sheets = google.sheets({ version: 'v4', auth });
 
   const data = {
-    to: 'bernardoandrade@cpejr.com.br',
+    to: 'viniciusfontes@cpejr.com.br',
     subject: 'Tentativa de escrever relatório',
     text: 'A aplicação iniciou a escrita do relatório na planilha',
     attachments: []
@@ -147,7 +147,7 @@ function writeReport(auth) {
         Sheets.writeReportGoogleSheets(this.report);
       });
       const data = {
-        to: 'bernardoandrade@cpejr.com.br',
+        to: 'viniciusfontes@cpejr.com.br',
         subject: 'Erro ao escrever relatório',
         text: `Ocorreu um erro ao tentar escrever o relatório na planilha:
         ${err}`,
