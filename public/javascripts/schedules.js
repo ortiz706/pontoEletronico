@@ -8,8 +8,8 @@ $(document).ready(() => {
             <caption>Lista de horários obrigatórios</caption>
             <thead class="thead-CPE-black">
               <tr>
-                <th class="text-center">Dia</th>
-                <th class="text-center">Hora</th>
+                <th class="text-center color-background">Dia</th>
+                <th class="text-center color-background">Hora</th>
               </tr>
             </thead>
             <tbody id="table">`;
