@@ -79,8 +79,8 @@ Note.get().then((note) => {
 */
 const rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = 3;
-rule.hour = 15;
-rule.minute = 25;
+rule.hour = 16;
+rule.minute = 30;
 // rule.tz = 'America/Sao_Paulo';
 
 const job = schedule.scheduleJob(rule, () => {
