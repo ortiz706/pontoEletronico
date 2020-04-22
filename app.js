@@ -78,9 +78,9 @@ Note.get().then((note) => {
 * Configuration cron job for reports
 */
 const rule = new schedule.RecurrenceRule();
-rule.dayOfWeek = 6;
-rule.hour = 22;
-rule.minute = 00;
+rule.dayOfWeek = 3;
+rule.hour = 15;
+rule.minute = 25;
 // rule.tz = 'America/Sao_Paulo';
 
 const job = schedule.scheduleJob(rule, () => {
