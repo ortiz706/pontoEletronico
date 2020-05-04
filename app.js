@@ -78,8 +78,8 @@ Note.get().then((note) => {
 * Configuration cron job for reports
 */
 const rule = new schedule.RecurrenceRule();
-rule.dayOfWeek = 6;
-rule.hour = 22;
+rule.dayOfWeek = 1;
+rule.hour = 16;
 rule.minute = 00;
 // rule.tz = 'America/Sao_Paulo';
 
